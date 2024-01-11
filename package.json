@@ -1,7 +1,7 @@
 {
-  "name": "express-typescript-boilerplate",
+  "name": "studenti-rs-api",
   "version": "1.0.0",
-  "description": "An Express.js boilerplate backend",
+  "description": "API service for studenti.rs",
   "main": "index.ts",
   "scripts": {
     "pretty": "pino-pretty",
@@ -62,7 +62,6 @@
     ],
     "**/*.{ts,js,json,css,md}": "npm run format"
   },
-  "author": "Edwin Hernandez",
-  "repository": "edwinhern/express-typescript-2024",
-  "license": "ISC"
+  "repository": "studenti-rs/api",
+  "license": "UNLICENSED"
 }
