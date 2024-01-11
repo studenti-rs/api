@@ -1,4 +1,4 @@
-name: Build Express+Typescript Application
+name: Build App
 
 on:
   push:
