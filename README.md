@@ -1,25 +1,16 @@
-# Node-Express-Typescript
+# studenti.rs API
 
-[![Docker Image CI](https://github.com/edwinhern/express-typescript-2024/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/edwinhern/express-typescript-2024/actions/workflows/docker-image.yml)
-[![CodeQL](https://github.com/edwinhern/express-typescript-2024/actions/workflows/codeql.yml/badge.svg)](https://github.com/edwinhern/express-typescript-2024/actions/workflows/codeql.yml)
-[![Build Express+Typescript Application](https://github.com/edwinhern/express-typescript-2024/actions/workflows/test.yml/badge.svg)](https://github.com/edwinhern/express-typescript-2024/actions/workflows/test.yml)
+[![Docker Image CI](https://github.com/studenti-rs/api/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/studenti-rs/api/actions/workflows/docker-image.yml)
+[![CodeQL](https://github.com/studenti-rs/api/actions/workflows/codeql.yml/badge.svg)](https://github.com/studenti-rs/api/actions/workflows/codeql.yml)
+[![Build Express+Typescript Application](https://github.com/studenti-rs/api/actions/workflows/test.yml/badge.svg)](https://github.com/studenti-rs/api/actions/workflows/test.yml)
 
-## Steps to use Typescript With Node + Execute the project
+## Introduction
 
-### Step 1: Initialize Project
+This project was bootstrapped using [Express Typescript Boilerplate](https://github.com/edwinhern/express-typescript-2024).
 
-- Open your terminal
-- Clone the repo `git clone https://github.com/edwinhern/express-typescript-2024.git`
-- Navigate by using `cd express-typescript-2024` into the folder directory
-- Install project dependencies by running `npm ci`
+It's a Node.js Application using Express and Typescript.
 
-### Step 2: Set Up Environment Variables
-
-- Copy the .env.template file to a new file named .env
-- You can use the following command: `cp .env.template .env`
-- Ensure that the .env file contains the required environment variables as defined in .env.template
-
-### Step 3: Available Scripts
+### Available Scripts
 
 Below are Scripts that can be ran and found in package.json file
 
@@ -61,5 +52,4 @@ Below are Scripts that can be ran and found in package.json file
 │       └── userService.ts
 └── server.ts
 
-10 directories, 19 files
 ```
