@@ -1,9 +1,9 @@
-import express from 'express';
+import express from 'express'
 
-import { processFile } from '@modules/file-processing/file-processing.controller';
+import { processFile } from '@modules/file-processing/file-processing.controller'
 
-const fileProcessingRoutes = express.Router();
+const fileProcessingRoutes = express.Router()
 
-fileProcessingRoutes.get('/', processFile);
+fileProcessingRoutes.get('/', processFile)
 
-export { fileProcessingRoutes };
+export { fileProcessingRoutes }
