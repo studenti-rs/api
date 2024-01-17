@@ -13,7 +13,6 @@
     "format:fix": "npx @biomejs/biome format' --write .",
     "format": "npx @biomejs/biome format .",
     "check:fix": "npx @biomejs/biome check . --apply",
-    "ts:check": "tsc --noEmit",
     "test": "jest",
     "docker:build": "docker-compose build --no-cache",
     "docker:start": "docker-compose up",
