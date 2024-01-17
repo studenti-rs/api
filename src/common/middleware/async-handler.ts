@@ -9,8 +9,8 @@ import { Request, Response } from 'express'
  * @param fn - The asynchronous request handler function.
  * @returns A middleware function that handles asynchronous errors.
  */
-export function asyncHandler(fn: (req: Request, res: Response) => Promise<any>) {
-	return (req: Request, res: Response, next: any) => {
+export function asyncHandler(fn: (req: Request, res: Response) => Promise<unknown>) {
+	return (req: Request, res: Response, next: () => void) => {
 		return fn(req, res).catch(next)
 	}
 }
