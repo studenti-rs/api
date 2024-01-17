@@ -1,12 +1,13 @@
-# EXAMPLE USAGE:
-#
-#   Refer for explanation to following link:
-#   https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
-
+# Format, lint, and apply safe code fixes before committing
 pre-commit:
   commands:
-    glob: "**/*.{ts,js,json,css,md}"
-    run: npm run check:fix
+    check:
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
+      run: npx biome check --apply --no-errors-on-unmatched --files-ignore-unknown=true {staged_files} && git update-index --again
+
+# Check formatting and lint before pushing
 pre-push:
   commands:
-    run: npm run test
+    check:
+      glob: "*.{js,ts,cjs,mjs,d.cts,d.mts,jsx,tsx,json,jsonc}"
+      run: npx biome check --no-errors-on-unmatched --files-ignore-unknown=true {pushed_files}

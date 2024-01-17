@@ -1,5 +1,10 @@
 {
 	"$schema": "https://biomejs.dev/schemas/1.5.2/schema.json",
+	"vcs": {
+		"enabled": true,
+		"clientKind": "git",
+		"useIgnoreFile": true
+	},
 	"organizeImports": {
 		"enabled": true
 	},
@@ -7,6 +12,21 @@
 		"enabled": true,
 		"rules": {
 			"recommended": true
+		}
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab",
+		"lineWidth": 100
+	},
+	"javascript": {
+		"formatter": {
+			"semicolons": "asNeeded",
+			"trailingComma": "all",
+			"quoteProperties": "asNeeded",
+			"quoteStyle": "single",
+			"bracketSpacing": true,
+			"bracketSameLine": false
 		}
 	}
 }

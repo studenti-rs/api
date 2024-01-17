@@ -8,16 +8,17 @@
     "dev": "tsx watch --clear-screen=false src/index.ts | npm run pretty",
     "build": "rimraf build && tsc",
     "start": "NODE_ENV=production npm run build && tsx build/index.js | npm run pretty",
-    "lint": "npx @biomejs/biome lint 'src/**/*.{ts,js,json}'",
-    "lint:fix": "npx @biomejs/biome lint --apply 'src/**/*.{ts,js,json}'",
-    "format:fix": "npx @biomejs/biome format 'src/**/*.{ts,js,json}' --write",
-    "format": "npx @biomejs/biome format 'src/**/*.{ts,js,json}''",
-    "check:fix": "npx @biomejs/biome check --apply 'src/**/*.{ts,js,json}'",
+    "lint": "npx @biomejs/biome lint .",
+    "lint:fix": "npx @biomejs/biome lint --apply .",
+    "format:fix": "npx @biomejs/biome format' --write .",
+    "format": "npx @biomejs/biome format .",
+    "check:fix": "npx @biomejs/biome check . --apply",
     "ts:check": "tsc --noEmit",
     "test": "jest",
     "docker:build": "docker-compose build --no-cache",
     "docker:start": "docker-compose up",
-    "docker:stop": "docker-compose down"
+    "docker:stop": "docker-compose down",
+    "postinstall": "lefthook install"
   },
   "dependencies": {
     "bull": "^4.12.0",

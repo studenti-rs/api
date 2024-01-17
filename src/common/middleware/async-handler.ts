@@ -10,7 +10,7 @@ import { Request, Response } from 'express'
  * @returns A middleware function that handles asynchronous errors.
  */
 export function asyncHandler(fn: (req: Request, res: Response) => Promise<any>) {
-  return (req: Request, res: Response, next: any) => {
-    return fn(req, res).catch(next)
-  }
+	return (req: Request, res: Response, next: any) => {
+		return fn(req, res).catch(next)
+	}
 }

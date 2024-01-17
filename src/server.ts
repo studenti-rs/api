@@ -1,9 +1,9 @@
+import path from 'path'
 import compression from 'compression'
 import cors from 'cors'
 import dotenv from 'dotenv'
 import express, { Express } from 'express'
 import helmet from 'helmet'
-import path from 'path'
 import { pino } from 'pino'
 
 import { compressFilter, errorHandler, rateLimiter, requestLogger } from '@common/middleware'
@@ -12,7 +12,7 @@ import { healthCheckRouter } from '@modules/healthCheck/healthCheckRoutes'
 import { usersRouter } from '@modules/user/userRoutes'
 
 dotenv.config({
-  path: path.resolve(__dirname, '../.env'),
+	path: path.resolve(__dirname, '../.env'),
 })
 
 const logger = pino({ name: 'server start' })
