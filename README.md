@@ -1,6 +1,6 @@
 # studenti.rs API
 
-[![Docker Image CI](https://github.com/studenti-rs/api/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/studenti-rs/api/actions/workflows/docker-image.yml)
+[![Docker Image CI](https://github.com/studenti-rs/api/actions/workflows/docker-image.yml/badge.svg?branch=main)](https://github.com/studenti-rs/api/actions/workflows/docker-image.yml)
 [![CodeQL](https://github.com/studenti-rs/api/actions/workflows/codeql.yml/badge.svg)](https://github.com/studenti-rs/api/actions/workflows/codeql.yml)
 [![Build Express+Typescript Application](https://github.com/studenti-rs/api/actions/workflows/test.yml/badge.svg)](https://github.com/studenti-rs/api/actions/workflows/test.yml)
 
