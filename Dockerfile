@@ -1,5 +1,9 @@
 FROM node:current-slim
 
+# Install Git (required for npm install - lefthook dependency)
+RUN apt-get update && \
+    apt-get install -y git
+
 # Create app directory
 WORKDIR /usr/src/app
 
