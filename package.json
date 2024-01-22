@@ -31,7 +31,7 @@
     "pino-http": "^9.0.0"
   },
   "devDependencies": {
-    "@biomejs/biome": "1.5.2",
+    "@biomejs/biome": "1.5.3",
     "@tsconfig/node-lts-strictest-esm": "^18.12.1",
     "@types/compression": "^1.7.5",
     "@types/cors": "^2.8.17",
